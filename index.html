@@ -27,42 +27,60 @@
         }
 
         #cd-quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             position: absolute;
             left: 7.5rem;
             right: 7.5rem;
             top: 7.5rem;
-            max-width: 40ch;
             text-wrap: balance;
-            color: hsl(0, 0%, 20%);
-            mix-blend-mode: multiply;
-            font-weight: 100;
-            font-size: 3rem;
+            mix-blend-mode: color-burn;
+            opacity: 0.8;
+            color: hsl(0, 0%, 2%);
             text-transform: capitalize;
             font-variant: small-caps;
-            text-align: center;
-            text-shadow: 0 1px 1px orange;
         }
 
-        #cd-quote::before,
-        #cd-quote::after {
+        #cd-quote-body {
+            max-width: 40ch;
+            font-weight: 100;
+            font-size: 3rem;
+            text-align: center;
+            text-shadow: 0 1px 1px gray;
+        }
+
+        #cd-quote-body::before,
+        #cd-quote-body::after {
             display: inline-flex;
             transform: scale(1.25);
             transform-origin: right center;
         }
 
-        #cd-quote::before {
+        #cd-quote-body::before {
             content: '“';
         }
 
-        #cd-quote::after {
+        #cd-quote-body::after {
             content: '”';
+        }
+
+        #cd-quote-author {
+            font-size: 2rem;
+        }
+
+        #cd-quote-author::before {
+            content: "– ";
         }
     </style>
 </head>
 
 <body>
     <img id="cd-image" src="./images/201739.jpg" />
-    <h1 id="cd-quote"></h1>
+    <div id="cd-quote">
+        <h1 id="cd-quote-body"></h1>
+        <p id="cd-quote-author"></p>
+    </div>
 </body>
 
 </html>
