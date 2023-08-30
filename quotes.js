@@ -27,6 +27,30 @@ const quotes = [
     body: 'All cruelty springs from weakness.',
     author: 'Lucius Annaeus Seneca',
   },
+  {
+    body: 'Adversity introduces a man to himself.',
+    author: 'Albert Einstein',
+  },
+  {
+    body: 'Death smiles at us all; all we can do is smile back.',
+    author: 'Marcus Aurelius',
+  },
+  {
+    body: 'The key is to keep company only with people who uplift you, whose presence calls forth your best.',
+    author: 'Epictetus',
+  },
+  {
+    body: 'Hardships often prepare ordinary people for an extraordinary destiny.',
+    author: 'C.S. Lewis',
+  },
+  {
+    body: 'How long are you going to wait before you demand the best for yourself?',
+    author: 'Epictetus',
+  },
+  {
+    body: "Don't explain your philosophy. Embody it.",
+    author: 'Epictetus',
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
