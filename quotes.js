@@ -30,11 +30,14 @@ const quotes = [
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
+  const imageElement = document.getElementById('cd-image');
   const bodyElement = document.getElementById('cd-quote-body');
   const authorElement = document.getElementById('cd-quote-author');
 
-  const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  const image = `./images/${Math.floor(Math.random() * 12).toString().padStart(2, '0')}.jpg`;
+  imageElement.setAttribute('src', image);
 
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
   bodyElement.innerText = quote.body;
   authorElement.innerText = quote.author ?? 'Anonymous';
 });
