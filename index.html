@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <script src="./quotes.js"></script>
     <style type="text/css">
         * {
             margin: 0;
@@ -10,20 +11,58 @@
 
         body {
             position: relative;
+            /*font-family: 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+            font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+            font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;*/
+            font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
         }
 
         img {
             width: 100%;
         }
 
-        #cd-wall-image {
+        #cd-image {
+            position: absolute;
             background-size: cover;
+        }
+
+        #cd-quote {
+            position: absolute;
+            left: 7.5rem;
+            right: 7.5rem;
+            top: 7.5rem;
+            max-width: 40ch;
+            text-wrap: balance;
+            color: hsl(0, 0%, 20%);
+            mix-blend-mode: multiply;
+            font-weight: 100;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            text-align: center;
+            text-shadow: 0 1px 1px orange;
+        }
+
+        #cd-quote::before,
+        #cd-quote::after {
+            display: inline-flex;
+            transform: scale(1.25);
+            transform-origin: right center;
+        }
+
+        #cd-quote::before {
+            content: '“';
+        }
+
+        #cd-quote::after {
+            content: '”';
         }
     </style>
 </head>
 
 <body>
-    <img id="cd-wall-image" src="./images/201739.jpg" />
+    <img id="cd-image" src="./images/201739.jpg" />
+    <h1 id="cd-quote"></h1>
 </body>
 
 </html>
