@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bodyElement = document.getElementById('cd-quote-body');
   const authorElement = document.getElementById('cd-quote-author');
 
-  const image = `./images/${Math.floor(Math.random() * 12).toString().padStart(2, '0')}.jpg`;
+  const image = `./images/${Math.floor(1 + Math.random() * 12).toString().padStart(2, '0')}.jpg`;
   imageElement.setAttribute('src', image);
 
   const quote = quotes[Math.floor(Math.random() * quotes.length)];
