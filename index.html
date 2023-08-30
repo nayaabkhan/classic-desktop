@@ -31,15 +31,18 @@
             align-items: center;
             gap: 8px;
             position: absolute;
-            left: 7.5rem;
-            right: 7.5rem;
+            left: 50%;
+            transform: translateX(-50%);
             top: 7.5rem;
             text-wrap: balance;
-            mix-blend-mode: color-burn;
             opacity: 0.8;
-            color: hsl(0, 0%, 2%);
+            color: hsl(0, 0%, 5%);
             text-transform: capitalize;
             font-variant: small-caps;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            -webkit-backdrop-filter: blur(6px);
         }
 
         #cd-quote-body {
@@ -47,22 +50,6 @@
             font-weight: 100;
             font-size: 3rem;
             text-align: center;
-            text-shadow: 0 1px 1px gray;
-        }
-
-        #cd-quote-body::before,
-        #cd-quote-body::after {
-            display: inline-flex;
-            transform: scale(1.25);
-            transform-origin: right center;
-        }
-
-        #cd-quote-body::before {
-            content: '“';
-        }
-
-        #cd-quote-body::after {
-            content: '”';
         }
 
         #cd-quote-author {
