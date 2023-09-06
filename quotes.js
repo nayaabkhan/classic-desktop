@@ -51,6 +51,30 @@ const quotes = [
     body: "Don't explain your philosophy. Embody it.",
     author: 'Epictetus',
   },
+  {
+    body: 'Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for.',
+    author: 'Epicurus',
+  },
+  {
+    body: 'Death does not concern us, because as long as we exist, death is not here. And when it does come, we no longer exist.',
+    author: 'Epicurus',
+  },
+  {
+    body: 'I have never wished to cater to the crowd; for what I know they do not approve, and what they approve I do not know.',
+    author: 'Epicurus',
+  },
+  {
+    body: 'It is folly for a man to pray to the gods for that which he has the power to obtain by himself.',
+    author: 'Epicurus',
+  },
+  {
+    body: 'Of all the means to insure happiness throughout the whole life, by far the most important is the acquisition of friends.',
+    author: 'Epicurus',
+  },
+  {
+    body: "It is not so much our friends' help that helps us as the confident knowledge that they will help us.",
+    author: 'Epicurus',
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
