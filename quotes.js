@@ -75,6 +75,10 @@ const quotes = [
     body: "It is not so much our friends' help that helps us as the confident knowledge that they will help us.",
     author: 'Epicurus',
   },
+  {
+    body: 'Human greatness is not discovered until it is tested; we must be hardened against fortune by fortune itself.',
+    author: 'Lucius Annaeus Seneca',
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
