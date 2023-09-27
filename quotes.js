@@ -79,6 +79,14 @@ const quotes = [
     body: 'Human greatness is not discovered until it is tested; we must be hardened against fortune by fortune itself.',
     author: 'Lucius Annaeus Seneca',
   },
+  {
+    body: 'Don’t be overheard complaining. Not even to yourself.',
+    author: 'Marcus Aurelius',
+  },
+  {
+    body: 'All men suffer, but not all men pity themselves.',
+    author: 'Marcus Aurelius',
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
