@@ -87,6 +87,10 @@ const quotes = [
     body: 'All men suffer, but not all men pity themselves.',
     author: 'Marcus Aurelius',
   },
+  {
+    body: 'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.',
+    author: 'Ralph Waldo Emerson',
+  },
 ]
 
 document.addEventListener('DOMContentLoaded', () => {
